@@ -1,0 +1,34 @@
+h2{
+    font-size: 16px;
+}
+/*header{
+    background-image: url(img/fondo-inicio2.jpg);
+    width: 150vh;
+    height: 200vh;
+    align-content: flex-end;
+}*/
+.nav-style{
+    background-color: #071f50;
+}
+.nav-style a {
+    color: white;
+}
+.buttom-inicio{
+    border-radius: 10px;
+    border-style: none;
+    padding: 5px;
+    background-color: #071f50;
+    color: white;
+}
+.bg-card{
+    background-color: #071f50;
+}
+h5{
+    color: white;
+}
+.servicios{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-area: "left right"
+
+}
