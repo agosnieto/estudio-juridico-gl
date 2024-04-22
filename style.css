@@ -1,17 +1,36 @@
+*{
+    margin: 0%;
+}
+/*.inicio{
+    background-image: url(img/fondo-inicio.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*width: 100%;
+    height: 500px;
+}*/
+.inicio{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:10px
+}
 h2{
     font-size: 16px;
 }
-/*header{
-    background-image: url(img/fondo-inicio2.jpg);
-    width: 150vh;
-    height: 200vh;
-    align-content: flex-end;
-}*/
 .nav-style{
-    background-color: #071f50;
+    width: 100vh;
+    height: 100vh;
+    background-image: url(img/fondo-inicio2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    overflow: hidden;
 }
 .nav-style a {
     color: white;
+}
+.nav-link:hover{
+    color: #EFD18D;
 }
 .buttom-inicio{
     border-radius: 10px;
@@ -20,15 +39,71 @@ h2{
     background-color: #071f50;
     color: white;
 }
-.bg-card{
+.card-body-servicios{
     background-color: #071f50;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
 }
+.card-title-servicios{
+    padding: 5px;
+}
+.text-servicios-card{
+    display: none;
+}
+
+/*.card:hover .card-title-servicios, 
+.card:hover .img-card{
+    display: none !important;
+}
+.card:hover .text-servicios-card{
+    display: block;
+    background-color: white;
+    color: #071f50;
+    font-size: 100;
+}*/
 h5{
     color: white;
 }
-.servicios{
+.container-servicios{
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-area: "left right"
-
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 10px;
+}
+.nosotros{
+    width: 100%;
+    height: 500px;
+    background-image: url(img/fondo-abogados.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-body-nosotros{
+    background-color: #071f50;
+    color: #EFD18D;
+    border-radius: 0%;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 200;
+}
+.rectangulo-decoracion{
+    padding: 10px;
+    border: 2px solid #EFD18D;
+}
+.card-title-abogado{
+    color: #EFD18D;
+    text-align: center;
+    font-size: medium;
+}
+.card-title-matricula{
+    color: #EFD18D;
+    text-align: center;
+    font-size: small;
+}
+@media (max-width: 768px){
+    .container-servicios{
+        grid-template-columns: 1fr;
+    }
 }
