@@ -4,45 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Estudio Jurídico Larche & Asociados</title>
 </head>
 <body>
   <header class="inicio">
-      <div>
-        <h1>TU SOCIO LEGAL CONFIABLE</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, voluptatem. Fugit optio eius repellendus, dolor magnam placeat minus voluptate fugiat enim, corrupti assumenda minima sapiente explicabo a ipsum deserunt distinctio.</p>
-      <button class="buttom-inicio">AGENDAR CITA</button>
+      <div class="text-inicio">
+        <div class="icon-inicio">
+          <img src="img/Logo_Larche1-removebg-preview.png" width="50px" alt="">
+        </div>
+        <h1 id="text-eslogan" style="color: #071f50;">TU ASESOR LEGAL DE CONFIANZA</h1>
+        <p id="parrafo-inicio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, voluptatem. Fugit optio eius repellendus, dolor magnam placeat minus voluptate fugiat enim, corrupti assumenda minima sapiente explicabo a ipsum deserunt distinctio.</p>
+        <div class="buttom-inicio-contenedor">
+          <button id="buttom-inicio">AGENDAR CITA</button>
+        </div>
       </div>
-      <div class="nav-style">
-        <nav>
-          <!--<img src="img/fondo-inicio.jpg" class="img-inicio" alt="Imagen inicio">-->
-          <ul class="nav justify-content-end ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">SERVICIOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">NOSOTROS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTO</a>
-              </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="nav-style">
+        <ul class="nav justify-content-end ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SERVICIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+
       
   </header>
   <main>
     <section class="servicios">
-      <h2 class="text-center">SERVICIOS</h2>
+      <h2 class="text-section">SERVICIOS</h2>
       <div class="container-servicios">
         <div class="text-servicios">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vitae minus nihil sunt iure nesciunt soluta, quisquam, nisi exercitationem saepe voluptates incidunt fuga cupiditate sapiente dolores harum repellat ratione id!</p>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-2 row-cols-md-3 g-3">
           <div class="col">
             <div class="card card-body-servicios text-center">
               <h5 class="card-title-servicios">DERECHO PENAL</h5>
@@ -71,12 +79,19 @@
                   <p class="text-servicios-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, praesentium. Vero eum quas non minima possimus consequuntur ratione aperiam blanditiis nihil natus, architecto, corrupti et dolorem pariatur nisi doloremque impedit?</p>
                 </div>
             </div>
+            <div class="col">
+              <div class="card card-body-servicios text-center">
+                <h5 class="card-title-servicios">DERECHO CORPORATIVO</h5>
+                <img src="img/icono-derecho-corporativo.png" width="50px" class=" img-card mx-auto d-block" alt="Icono derecho corporativo">
+                <p class="text-servicios-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, praesentium. Vero eum quas non minima possimus consequuntur ratione aperiam blanditiis nihil natus, architecto, corrupti et dolorem pariatur nisi doloremque impedit?</p>
+              </div>
+            </div>
           </div>
         </div>
     </section>
     <section class="nosotros">
-      <h2 class="text-center" style="color: #071f50; font-size:large; padding: 5px;">NOSOTROS</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+      <h2 class="text-section">NOSOTROS</h2>
+      <div class="container-nosotros row row-cols-1 row-cols-md-4 g-2">
           <div class="col">
             <div class="card card-body-nosotros">
               <div class="rectangulo-decoracion">
@@ -98,28 +113,26 @@
       </div>
     </section>
   </main>
-        <h2>CONTACTO</h2>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum fugit voluptate earum maiores consequatur. Sed repudiandae velit ipsa, sit accusamus mollitia natus iure distinctio, eos minima tempore amet ut?</h3>
+        <h2 class="text-section">CONTACTO</h2>
+        <p class="text-center">Dirección: Jerónimo Luis de Cabrera 333</p>
         <iframe class="mx-auto d-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.5673295531783!2d-64.18418092511892!3d-31.39849169538517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432986f0a6050f1%3A0xda78e55ec3337300!2sJer%C3%B3nimo%20Luis%20de%20Cabrera%20333%2C%20R%C3%ADo%20Segundo%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1711569831663!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer class="text-center text-white">
-      <div class="container p-4 pb-0">
-        <section class="mb-4">
+      <div class="container p-4">
+        <section class="mb-4" >
               <a class="btn  btn-floating m-1 texto" target="_blank" href="https://instagram.com/pet_shop_mora?utm_medium=copy_link" role="button"
-              ><i class="fab fa-instagram"><img src="./img/icono-whatsapp.png" width="30px" alt="WhatsApp"></i
-            ></a>
-          <a class="btn  btn-floating m-1" target="_blank" href="https://wa.link/sk2osm" role="button"
-            ><i class="fab fa-linkedin-in"><img src="./img/icono-email.png" width="35px" alt="Email"></i
-          ></a>
-          <a class="btn  btn-floating m-1" target="_blank" href="https://g.page/pet-shop-mora?share" role="button"
-          ><i class="fab fa-linkedin-in"><img src="./img/icono-instagram.png" width="30px" alt="Instagram"></i
-        ></a>
-      <p>Av. Donato Alvarez 9151 Local 2 - Arguello</p>
-      <p>Horario: Lunes a Sábados de 9:30 a 13:30 | 16:30 a 20:30 <br>
-          Domingos de 10:00 a 13:30
-      </p>
-      <div class="text-center p-3" style="background-color:#071f50; color: #EFD18D;">
-        © 2024 Copyright:
-        <a style="color: #EFD18D; text-decoration: none;" href="">estudiojuridicogl.com</a>
+              ><i class="fab fa-whatsapp"><img src="./img/icono-whatsapp.png" width="30px" alt="WhatsApp"></i
+              ></a>
+              <a class="btn  btn-floating m-1" target="_blank" href="https://wa.link/sk2osm" role="button"
+                ><i class="fab fa-email"><img src="./img/icono-email.png" width="35px" alt="Email"></i
+              ></a>
+              <a class="btn  btn-floating m-1" target="_blank" href="https://g.page/pet-shop-mora?share" role="button"
+              ><i class="fab fa-instagram"><img src="./img/icono-instagram.png" width="30px" alt="Instagram"></i
+              ></a>
+        </section>
+        <div class="text-center py-2" style="background-color:#071f50; color: white; width: 100%; ">
+          © 2024 Copyright:
+          <a style="color: white; text-decoration: none;" href="">estudiojuridicogl.com</a>
+        </div>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
