@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 .inicio{
     display: grid;
@@ -71,8 +72,11 @@
     border-style: none;
     padding: 7px;
     background-color: #071f50;
+}
+#link-consulta{
     color: white;
     font-family: "Oswald",sans-serif;
+    text-decoration: none;
 }
 .text-servicios{
     display: flex;
@@ -139,12 +143,9 @@ h5{
     font-size: medium;
 }
 .card-title-matricula{
-    color: #EFD18D;
+    color: white;
     text-align: center;
     font-size: small;
-}
-.fa-instagram,.fa-email,.fa-whatsapp:hover{
-    width: 40px;
 }
 @media (max-width: 768px){
     .container-servicios{
@@ -156,10 +157,6 @@ h5{
     }
 }
 @media(max-width: 576px){
-    .nav-style{
-        width: 100%;
-        height: auto;
-    }
     .inicio{
         display: block;
     }
