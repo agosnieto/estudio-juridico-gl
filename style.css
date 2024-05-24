@@ -54,12 +54,13 @@
     background-position: right;
     overflow: hidden;
 }
-.nav-style a {
+.navbar-light .navbar-nav .nav-link{
+    text-decoration: none;
     color: white;
     font-family:"Osawald", sans-serif;
     font-weight:400;
 }
-.nav-link:hover{
+.navbar-light .navbar-nav .nav-link:hover{
     color: #EFD18D;
 }
 .buttom-inicio-contenedor{
@@ -92,6 +93,14 @@
     width: 150px;
     height: 150px;
     border-radius: 15px;
+}
+.card-body-servicios-right{
+    animation:fadeInRight; 
+    animation-duration: 2s;
+}
+.card-body-servicios-left{
+    animation:fadeInLeft; 
+    animation-duration: 2s;
 }
 .card-title-servicios{
     padding: 5px;
@@ -147,6 +156,17 @@ h5{
     text-align: center;
     font-size: small;
 }
+@media (max-width: 992px){
+    .container-servicios{
+        grid-template-areas: "text-servicios text-servicios"
+                             "card card"
+                             "card card";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+
+    }
+    
+}
 @media (max-width: 768px){
     .container-servicios{
         grid-template-areas: "text-servicios text-servicios"
@@ -154,7 +174,9 @@ h5{
                              "card card";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
+
     }
+    
 }
 @media(max-width: 576px){
     .inicio{
@@ -187,14 +209,12 @@ h5{
         background-repeat: no-repeat;
         background-position: center;
     }
-    footer {
-        width: 100%;
-        padding: 1rem 0;
-        background-color: #071f50;
-        color: white;
+    .map{
+        padding: 30px;
     }
     .container {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
+    
 }

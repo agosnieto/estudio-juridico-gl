@@ -9,76 +9,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/icon.png"  type="image/x-icon">
     <title>Estudio Jurídico Larche & Asociados</title>
 </head>
 <body>
   <header class="inicio">
       <div class="text-inicio">
         <div class="icon-inicio">
-          <img src="img/Logo_Larche1-removebg-preview.png" width="50px" alt="">
+          <a href="#inicio" class="navbar-brand"><img src="img/logo1sf.png" width="100px" alt=""></a>
         </div>
-        <h1 id="text-eslogan" style="color: #071f50;">TU ASESOR LEGAL DE CONFIANZA</h1>
+        <h1 id="text-eslogan" style="color: #071f50; " class="animate__animated animate__zoomIn animate__delay-0.75s">TU ASESOR LEGAL DE CONFIANZA</h1>
         <p id="parrafo-inicio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, voluptatem. Fugit optio eius repellendus, dolor magnam placeat minus voluptate fugiat enim, corrupti assumenda minima sapiente explicabo a ipsum deserunt distinctio.</p>
         <div class="buttom-inicio-contenedor">
           <button id="buttom-inicio"><a id="link-consulta" href="https://wa.link/5wbxgs" target="_blank">AGENDAR CITA</a></button>
         </div>
       </div>
-      <nav class="nav-style">
-        <ul class="nav justify-content-end ">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#inicio">INICIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#servicios">SERVICIOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#nosotros">NOSOTROS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">CONTACTO</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="nav-style">
+        <nav class="navbar navbar-expand-lg navbar-light text-end">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#inicio">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#servicios">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">CONTACTO</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
   </header>
   <main>
     <section class="servicios">
       <h2 class="text-section" id="servicios">SERVICIOS</h2>
       <div class="container-servicios">
-        <div class="text-servicios">
+        <div class="text-servicios animate__animated card-body-servicios-left">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vitae minus nihil sunt iure nesciunt soluta, quisquam, nisi exercitationem saepe voluptates incidunt fuga cupiditate sapiente dolores harum repellat ratione id!</p>
         </div>
         <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
-            <div class="card card-body-servicios text-center">
+            <div class="card card-body-servicios text-center card-body-servicios-left">
               <h5 class="card-title-servicios">DERECHO PENAL</h5>
               <img src="img/icono-derecho-penal.png" width="50px" class=" img-card mx-auto d-block" alt="Icono derecho penal">
               <p class="text-servicios-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, praesentium. Vero eum quas non minima possimus consequuntur ratione aperiam blanditiis nihil natus, architecto, corrupti et dolorem pariatur nisi doloremque impedit?</p>
             </div>
           </div>
           <div class="col">
-            <div class="card card-body-servicios text-center">
+            <div class="card card-body-servicios text-center card-body-servicios-right">
               <h5 class="card-title-servicios">DERECHO LABORAL</h5>
               <img src="img/icono-derecho-laboral.png" width="50px" class=" img-card mx-auto d-block" alt="Icono derecho laboral">
               <p class="text-servicios-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, praesentium. Vero eum quas non minima possimus consequuntur ratione aperiam blanditiis nihil natus, architecto, corrupti et dolorem pariatur nisi doloremque impedit?</p>
             </div>
           </div>
           <div class="col">
-            <div class="card card-body-servicios text-center">
+            <div class="card card-body-servicios text-center card-body-servicios-right">
               <h5 class="card-title-servicios">DERECHO FAMILIAR</h5>
               <img src="img/icono-derecho-familiar-100.png" width="50px" class=" img-card mx-auto d-block" alt="Icono derecho familiar">
               <p class="text-servicios-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, praesentium. Vero eum quas non minima possimus consequuntur ratione aperiam blanditiis nihil natus, architecto, corrupti et dolorem pariatur nisi doloremque impedit?</p>
             </div>
             </div>
             <div class="col">
-                <div class="card card-body-servicios text-center">
+                <div class="card card-body-servicios text-center card-body-servicios-left">
                   <h5 class="card-title-servicios">DERECHO CIVIL</h5>
                   <img src="img/icono-derecho-civil.png" width="50px" class=" img-card mx-auto d-block" alt="Icono derecho civil">
                   <p class="text-servicios-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, praesentium. Vero eum quas non minima possimus consequuntur ratione aperiam blanditiis nihil natus, architecto, corrupti et dolorem pariatur nisi doloremque impedit?</p>
                 </div>
             </div>
             <div class="col">
-              <div class="card card-body-servicios text-center">
+              <div class="card card-body-servicios text-center card-body-servicios-right">
                 <h5 class="card-title-servicios">DERECHO CORPORATIVO</h5>
                 <img src="img/icono-derecho-corporativo.png" width="50px" class=" img-card mx-auto d-block" alt="Icono derecho corporativo">
                 <p class="text-servicios-card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, praesentium. Vero eum quas non minima possimus consequuntur ratione aperiam blanditiis nihil natus, architecto, corrupti et dolorem pariatur nisi doloremque impedit?</p>
@@ -111,11 +125,12 @@
       </div>
     </section>
   </main>
-        <h2 class="text-section" id="contacto">CONTACTO</h2>
-        <p class="text-center">Dirección: Jerónimo Luis de Cabrera 333</p>
-        <iframe class="mx-auto d-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.5673295531783!2d-64.18418092511892!3d-31.39849169538517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432986f0a6050f1%3A0xda78e55ec3337300!2sJer%C3%B3nimo%20Luis%20de%20Cabrera%20333%2C%20R%C3%ADo%20Segundo%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1711569831663!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <footer class="text-center text-white">
-      <div class="container p-4">
+
+    <h2 class="text-section" id="contacto">CONTACTO</h2>
+    <p class="text-center">Dirección: Jerónimo Luis de Cabrera 333</p>
+    <iframe class="mx-auto d-block map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.5673295531783!2d-64.18418092511892!3d-31.39849169538517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432986f0a6050f1%3A0xda78e55ec3337300!2sJer%C3%B3nimo%20Luis%20de%20Cabrera%20333%2C%20R%C3%ADo%20Segundo%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1711569831663!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer class="text-center text-white footer-style">
+      <div class="container">
         <section class="mb-4" >
               <a class="btn  btn-floating m-1 texto" target="_blank" href="https://wa.link/i54hbd" role="button"
               ><i class="fab fa-whatsapp"><img src="./img/icono-whatsapp.png" width="30px" alt="WhatsApp"></i
@@ -127,7 +142,7 @@
               ><i class="fab fa-instagram"><img src="./img/icono-instagram.png" width="30px" alt="Instagram"></i
               ></a>
         </section>
-        <div class="text-center py-2" style="background-color:#071f50; color: white; width: 100%; ">
+        <div class="text-center p-3" style="background-color:#071f50; color: white; width: 100%;">
           © 2024 Copyright:
           <a style="color: white; text-decoration: none;" href="">estudiojuridicogl.com</a>
         </div>
