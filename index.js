@@ -6,7 +6,7 @@ function loadHeader() {
               <nav class="navbar navbar-expand-lg navbar-dark">
                   <div class="container">
                       <a class="navbar-brand" href="#inicio"><img src="img/logo1sf.png" alt="Logo" width="100"></a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <button class="navbar-toggler button-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse" id="navbarNav">
@@ -30,9 +30,9 @@ function loadHeader() {
           </header>
           <section class="hero" id="inicio">
               <div class="container">
-                  <h1 class="animate__animated animate__zoomIn animate__delay-0.75s">TU ASESOR LEGAL DE CONFIANZA</h1>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, voluptatem...</p>
-                  <a href="https://wa.link/5wbxgs" target="_blank" class="btn btn-custom">AGENDAR CITA</a>
+                  <h1 id="text-eslogan-responsive" class="animate__animated animate__zoomIn animate__delay-0.75s">TU ASESOR LEGAL DE CONFIANZA</h1>
+                  <p id= "parrafo-inicial-responsive">En cada paso, defendemos tus derechos con integridad y excelencia. Tu tranquilidad es nuestra prioridad.</p>
+                  <button class = "btn-custom"><a href="https://wa.link/5wbxgs" id= "link-consulta" target="_blank" class="btn">AGENDAR CITA</a></button>
               </div>
           </section>
       `;
@@ -44,13 +44,13 @@ function loadHeader() {
                       <a href="#inicio" class="navbar-brand"><img src="img/logo1sf.png" width="100px" alt=""></a>
                   </div>
                   <h1 id="text-eslogan" style="color: #071f50;" class="animate__animated animate__zoomIn animate__delay-0.75s">TU ASESOR LEGAL DE CONFIANZA</h1>
-                  <p id="parrafo-inicio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, voluptatem. Fugit optio eius repellendus, dolor magnam placeat minus voluptate fugiat enim, corrupti assumenda minima sapiente explicabo a ipsum deserunt distinctio.</p>
+                  <p id="parrafo-inicio">En cada paso, defendemos tus derechos con integridad y excelencia. Tu tranquilidad es nuestra prioridad.</p>
                   <div class="buttom-inicio-contenedor">
                       <button id="buttom-inicio"><a id="link-consulta" href="https://wa.link/5wbxgs" target="_blank">AGENDAR CITA</a></button>
                   </div>
               </div>
               <div class="nav-style">
-                  <nav class="navbar navbar-expand-lg navbar-light text-end">
+                  <nav class="navbar navbar-expand-md navbar-light text-end">
                       <div class="container-fluid">
                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
@@ -81,4 +81,20 @@ function loadHeader() {
 window.addEventListener('resize', loadHeader);
 window.addEventListener('load', loadHeader);
 
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+document.getElementById("backToTopBtn").addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
