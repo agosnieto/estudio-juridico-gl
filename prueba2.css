@@ -1,0 +1,161 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.inicio{
+    display: grid;
+    grid-template-areas: "text-inicio nav-style"
+                         "text-eslogan nav-style";
+    grid-template-columns: auto auto;
+}
+.text-section{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight:400;
+    font-style: normal;
+    color: #071f50;
+    margin: 25px;
+}
+#parrafo-inicio{
+    font-family: "EB Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#text-eslogan {
+    font-family: "Libre Bodoni", serif;
+    font-weight:300;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 110px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.icon-inicio{
+    background-color:#071f50;
+    padding: 10px;
+    width: 100%;
+}
+.nav-style{
+    width: 95vh;
+    height: 100vh;
+    background-image: url(img/fondo-inicio4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    overflow: hidden;
+}
+.navbar-light .navbar-nav .nav-link{
+    text-decoration: none;
+    color: white;
+    font-family:"Osawald", sans-serif;
+    font-weight:400;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #EFD18D;
+}
+.navbar-toggler{
+    display: none;
+}
+.buttom-inicio-contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#buttom-inicio{
+    border-radius: 10px;
+    border-style: none;
+    padding: 7px;
+    background-color: #071f50;
+}
+#link-consulta{
+    color: white;
+    font-family: "Oswald",sans-serif;
+    text-decoration: none;
+}
+.text-servicios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card-body-servicios{
+    background-color: #071f50;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+.card-body-servicios-right{
+    animation:fadeInRight; 
+    animation-duration: 2s;
+}
+.card-body-servicios-left{
+    animation:fadeInLeft; 
+    animation-duration: 2s;
+}
+.card-title-servicios{
+    padding: 5px;
+}
+.text-servicios-card{
+    display: none;
+}
+h5{
+    color: white;
+}
+.container-servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 5px;
+}
+.nosotros{
+    width: 100%;
+    height: 500px;
+    background-image: url(img/fondo-abogados.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container-nosotros{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+
+}
+.card-body-nosotros{
+    background-color: #071f50;
+    color: #EFD18D;
+    border-radius: 0%;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 200;
+}
+.rectangulo-decoracion{
+    padding: 10px;
+    border: 2px solid #EFD18D;
+}
+.card-title-abogado{
+    color: #EFD18D;
+    text-align: center;
+    font-size: medium;
+}
+.card-title-matricula{
+    color: white;
+    text-align: center;
+    font-size: small;
+}

@@ -79,6 +79,29 @@
     font-family: "Oswald",sans-serif;
     text-decoration: none;
 }
+
+.hero {
+    background: #071f50 url('img/fondo-inicio4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #EFD18D;
+    padding: 100px 0;
+    text-align: center;
+}
+.btn-custom {
+    background-color: #EFD18D;
+    color: #071f50;
+    border: none;
+}
+.btn-custom:hover {
+    background-color: #d4b06c;
+    color: #071f50;
+}
+.section-title {
+    color: #071f50;
+    margin: 40px 0;
+    text-align: center;
+}
 .text-servicios{
     display: flex;
     flex-direction: column;
@@ -210,25 +233,24 @@ h5{
     }
    
 }
+
 @media(max-width: 576px){
-    .inicio{
+    .inicio {
         display: block;
     }
-    .nav-style{
-        display: none;
-    }
-    .icon-inicio{
+
+    .icon-inicio {
         position: relative;
         padding: 0;
     }
-    .navbar-toggler{
-        position:absolute;
-        top: 10px;
-        right: 10px;
-        background-color: white;
+    .navbar{
+        background-color: #071f50;
     }
-    .navbar-toggler-icon{
-      color: white;
+    .navbar-nav .nav-link {
+        color: white;
+    }
+    .navbar-nav .nav-link:hover {
+        color: #EFD18D;
     }
     #text-eslogan {
         font-family: "Libre Bodoni", serif;
