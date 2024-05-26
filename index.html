@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descrption" content="Larchr & Asociados.Guiados por los principios de ética y profesionalismo, aseguramos la máxima integridad en cada caso que manejamos.
+    <meta name="description" content="Larche & Asociados.Guiados por los principios de ética y profesionalismo, aseguramos la máxima integridad en cada caso que manejamos.
     Enfocados en ti como nuestra prioridad número uno, nos dedicamos a comprender tus necesidades legales para brindarte soluciones personalizadas y confiables.">
     <meta name="keywords" content="">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,22 +25,44 @@
     <meta property="og:descrption" content="Larchr & Asociados.Guiados por los principios de ética y profesionalismo, aseguramos la máxima integridad en cada caso que manejamos.
     Enfocados en ti como nuestra prioridad número uno, nos dedicamos a comprender tus necesidades legales para brindarte soluciones personalizadas y confiables.">
 </head>
+ <style>
+    .hero {
+      position: relative;
+      padding: 110px 0;
+      text-align: center;
+      overflow: hidden;
+    }
+
+  .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 95vh;
+      height: 100vh;
+      background: url('img/fondo-inicio4.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.45;
+      z-index: -1; 
+    }
+ </style>
 <body>
   <button id="backToTopBtn" class="btn">&#8593</button>
   <div id="header-container">
       <header class="inicio">
         <div class="text-inicio">
           <div class="icon-inicio">
-            <a href="#inicio" class="navbar-brand"><img src="img/logo1sf.png" width="100px" alt=""></a>
+            <a href="#inicio" class="navbar-brand"><img src="img/logo1sf.png" width="100px" alt="logo estudio"></a>
           </div>
-          <h1 id="text-eslogan" style="color: #071f50; " class="animate__animated animate__zoomIn animate__delay-0.75s">TU ASESOR LEGAL DE CONFIANZA</h1>
-          <p id="parrafo-inicio">En cada paso, defendemos tus derechos con integridad y excelencia. Tu tranquilidad es nuestra prioridad.</p>
+          <h1 id="text-eslogan" style="color: #071f50; ">TU ASESOR LEGAL DE CONFIANZA</h1>
+          <p id="parrafo-inicio">En cada paso, defendemos tus derechos con integridad y excelencia.<br>Tu tranquilidad es nuestra prioridad.</p>
           <div class="buttom-inicio-contenedor">
             <button id="buttom-inicio"><a id="link-consulta" href="https://wa.link/5wbxgs" target="_blank">AGENDAR CITA</a></button>
           </div>
         </div>
         <div class="nav-style">
-          <nav class="navbar navbar-expand-lg navbar-light text-end">
+          <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -70,36 +92,36 @@
     <section class="servicios">
       <h2 class="text-section" id="servicios">SERVICIOS</h2>
       <div class="container-servicios">
-        <div class="text-servicios animate__animated card-body-servicios-left">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vitae minus nihil sunt iure nesciunt soluta, quisquam, nisi exercitationem saepe voluptates incidunt fuga cupiditate sapiente dolores harum repellat ratione id!</p>
+        <div class="text-servicios">
+          <p>"Nuestro estudio ofrece una amplia gama de servicios legales especializados para atender todas tus necesidades. Desde asesoramiento en derecho civil y penal hasta representación en casos laborales y familiares, estamos aquí para brindarte apoyo experto en cada paso del camino. Confía en nuestro equipo para proteger tus derechos y buscar la mejor solución para ti."</p>
         </div>
         <div class="row row-cols-2 row-cols-sm-1 row-cols-md-3 g-2 justify-content-center">
           <div class="col d-flex justify-content-center">
-            <div class="card card-body-servicios text-center card-body-servicios-left">
+            <div class="card card-body-servicios text-center">
               <h5 class="card-title-servicios">DERECHO PENAL</h5>
               <img src="img/icono-derecho-penal.png" width="50px" class=" img-card mx-auto d-block" alt="Icono derecho penal">
             </div>
           </div>
           <div class="col d-flex justify-content-center">
-            <div class="card card-body-servicios text-center card-body-servicios-right">
+            <div class="card card-body-servicios text-center">
               <h5 class="card-title-servicios">DERECHO LABORAL</h5>
               <img src="img/icono-derecho-laboral.png" width="50px" class=" img-card mx-auto d-block" alt="Icono derecho laboral">
             </div>
           </div>
           <div class="col d-flex justify-content-center">
-            <div class="card card-body-servicios text-center card-body-servicios-right">
+            <div class="card card-body-servicios text-center ">
               <h5 class="card-title-servicios">DERECHO FAMILIAR</h5>
               <img src="img/icono-derecho-familiar-100.png" width="50px" class=" img-card mx-auto d-block" alt="Icono derecho familiar">
             </div>
             </div>
             <div class="col d-flex justify-content-center">
-                <div class="card card-body-servicios text-center card-body-servicios-left">
+                <div class="card card-body-servicios text-center">
                   <h5 class="card-title-servicios">DERECHO CIVIL</h5>
                   <img src="img/icono-derecho-civil.png" width="50px" class=" img-card mx-auto d-block" alt="Icono derecho civil">
                 </div>
             </div>
             <div class="col d-flex justify-content-center">
-              <div class="card card-body-servicios text-center card-body-servicios-right">
+              <div class="card card-body-servicios text-center">
                 <h5 class="card-title-servicios">DERECHO CORPORATIVO</h5>
                 <img src="img/icono-derecho-corporativo.png" width="50px" class=" img-card mx-auto d-block" alt="Icono derecho corporativo">
               </div>
@@ -134,7 +156,7 @@
 
     <h2 class="text-section" id="contacto">CONTACTO</h2>
     <p class="text-center">Dirección: Jerónimo Luis de Cabrera 333</p>
-    <iframe class="mx-auto d-block map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.5673295531783!2d-64.18418092511892!3d-31.39849169538517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432986f0a6050f1%3A0xda78e55ec3337300!2sJer%C3%B3nimo%20Luis%20de%20Cabrera%20333%2C%20R%C3%ADo%20Segundo%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1711569831663!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="mx-auto d-block map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.5673295531783!2d-64.18418092511892!3d-31.39849169538517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432986f0a6050f1%3A0xda78e55ec3337300!2sJer%C3%B3nimo%20Luis%20de%20Cabrera%20333%2C%20R%C3%ADo%20Segundo%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1711569831663!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="mapa ubicación"></iframe>
     <footer class="text-center text-white footer-style">
       <div class="container">
         <section class="mb-4" >
