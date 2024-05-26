@@ -109,6 +109,26 @@
     font-family: "Oswald",sans-serif;
     text-decoration: none;
 }
+.hero {
+    position: relative;
+    padding: 110px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95vh;
+    height: 100vh;
+    background: url('img/fondo-inicio4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.45;
+    z-index: -1; 
+}
 .btn-custom {
     border-style: none;
     border-radius: 10px;

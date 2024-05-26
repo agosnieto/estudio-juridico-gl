@@ -5,7 +5,7 @@ function loadHeader() {
           <header>
               <nav class="navbar navbar-expand-lg navbar-dark">
                   <div class="container">
-                  <a href="#inicio" class="navbar-brand"><img src="img/NUEVO LOGO LARCHE (100 x 100 px).png" width="100px" alt="logo estudio"></a>
+                  <a href="#inicio" class="navbar-brand"><img src="img/logo_larche.png" width="100px" alt="logo estudio"></a>
                       <button class="navbar-toggler button-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button>
@@ -41,7 +41,7 @@ function loadHeader() {
           <header class="inicio">
               <div class="text-inicio">
                   <div class="icon-inicio">
-                  <a href="#inicio" class="navbar-brand"><img src="img/NUEVO LOGO LARCHE (100 x 100 px).png" width="100px" alt="logo estudio"></a>
+                  <a href="#inicio" class="navbar-brand"><img src="img/logo_larche.png" width="100px" alt="logo estudio"></a>
                   </div>
                   <h1 id="text-eslogan" style="color: #071f50;">TU ASESOR LEGAL DE CONFIANZA</h1>
                   <p id="parrafo-inicio">En cada paso, defendemos tus derechos con integridad y excelencia.<br> Tu tranquilidad es nuestra prioridad.</p>
