@@ -73,7 +73,7 @@
     background-image: url(img/fondo-inicio4.jpg);
     background-size:cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position:right;
     overflow: hidden;
 }
 .navbar-light .navbar-nav .nav-link{
@@ -120,7 +120,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -156,7 +156,6 @@ h5{
     align-items: center;
     justify-content: center;
     margin-top: 60px;
-
 }
 .card-body-nosotros{
     background-color: #071f50;
