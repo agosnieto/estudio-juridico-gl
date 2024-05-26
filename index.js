@@ -5,7 +5,7 @@ function loadHeader() {
           <header>
               <nav class="navbar navbar-expand-lg navbar-dark">
                   <div class="container">
-                      <a class="navbar-brand" href="#inicio"><img src="img/NUEVO LOGO LARCHE (100 x 100 px).png" alt="Logo" width="100"></a>
+                  <a href="#inicio" class="navbar-brand"><img src="img/NUEVO LOGO LARCHE (100 x 100 px).png" width="100px" alt="logo estudio"></a>
                       <button class="navbar-toggler button-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button>
